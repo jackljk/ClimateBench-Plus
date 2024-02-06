@@ -16,6 +16,11 @@ python main.py
 It will run the code and save the results in the `results` folder. 
 
 ## XGBoost Regression
+To run the code, after creating a basic conda environment, go to the `requirement.txt` file in `XGBoost` folder and 
+run the following command:
+```bash
+pip install -r requirements.txt
+```
 
 
 ## CNN LSTM with Physics-Informed Loss
