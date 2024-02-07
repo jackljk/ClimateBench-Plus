@@ -22,5 +22,12 @@ run the following command:
 pip install -r requirements.txt
 ```
 
+The preprocessed training and test data can be obtained from Zenodo: (https://zenodo.org/records/7064308). You need the `utils.py` file in `XGBoost` folder to prepare the preprocessed data and save the training and test data by a certain output path.
+
+**NOT IMPLEMENTED YET** (Code is currently only in the notebooks as model is still incomplete)
+Then, run the following command to run the code:
+```bash
+python main.py
+```
 
 ## CNN LSTM with Physics-Informed Loss
