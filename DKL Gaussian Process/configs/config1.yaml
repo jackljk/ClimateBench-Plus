@@ -1,0 +1,16 @@
+datapath: data/
+
+
+# search: for getting the best hyperparameters
+# train: for using best hyperparameters and getting results from best model
+run_type: search 
+no_search_runs: 50 # Number of runs to search for the best hyperparameters
+# Directory to save the results
+hyperparam_output_dir: hyperparam_results/
+# Directory to save the best model results
+model_output_dir: model_results/
+
+
+# Variables to run
+variable: tas
+
