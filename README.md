@@ -29,7 +29,7 @@ You need the `utils.py` file in `XGBoost` folder to prepare the preprocessed dat
 **NOT IMPLEMENTED YET** (Code is currently only in the notebooks as model is still incomplete)
 Then, run the following command to run the code:
 ```bash
-python main.py
+python xgboost_main.py
 ```
 
 ## CNN LSTM with Physics-Informed Loss
