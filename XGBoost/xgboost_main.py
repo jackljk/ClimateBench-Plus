@@ -15,6 +15,7 @@ import xgboost as xgb
 from sklearn.model_selection import GridSearchCV
 import random
 
+
 # Create the random grid
 param_grid = {
     'learning_rate': np.linspace(0.01, 0.2, 10),
@@ -44,4 +45,4 @@ def xgboost(X_train,y_train,test_X,test_y):
     best_xgb = random_search.best_estimator_
     m_out = best_xgb.predict(test_X)
     m_out = pred_tas.reshape(86,96,144)
-    return rmse(test_y, m_out)
+    return get_rmse(test_y, m_out)
