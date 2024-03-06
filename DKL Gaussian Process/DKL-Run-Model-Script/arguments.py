@@ -1,7 +1,7 @@
 import argparse
 import yaml
 
-def args():
+def arguments():
     parser = argparse.ArgumentParser(description='Description of your program')
     parser.add_argument('-c', '--config', help='Path to config file')
     parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose mode')

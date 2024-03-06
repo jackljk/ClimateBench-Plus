@@ -11,6 +11,24 @@ hyperparam_output_dir: hyperparam_results/
 model_output_dir: model_results/
 
 
-# Variables to run
+# Variables to run options: tas, pr, dtr, pr90
 variable: tas
+
+
+model_hyperparameters: { # Hyperparameters for the model if run_type is train
+    'activation': 'sigmoid',
+    'bnorm': True,
+    'dropout': False,
+    'dropout_prob': 0.5,
+    'kernel_types': ('Matern52', 'Matern52', 'Matern52', 'Matern52'),
+    'active_dim_multiplier': 2,
+    'dim_max': 256,
+    'output_dim': 60,
+    'optimizer_lr': 0.001
+}
+
+
+plot: False # Plot the results
+TNRMSE: False # True if you want to print the TNRMSE for time slice 2080-2100
+```
 

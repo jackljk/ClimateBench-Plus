@@ -16,16 +16,16 @@ from helper_funcs import *
 train_files = ["ssp126", "ssp370", "ssp585", "historical", "hist-GHG"]
 
 def get_processed_data(args):
-    datapath = args.datapath
-    var = args.variable
-
+    datapath = args['datapath']
+    var = args['variable']
+    
     # Create training and testing arrays
-    X_train, eof_solvers = create_predictor_data(train_files)
-    y_train = create_predictdand_data(train_files)['var'].values.reshape(-1, 96 * 144)
+    X_train, eof_solvers = create_predictor_data(train_files, datapath)
+    y_train = create_predictdand_data(train_files, datapath)[var].values.reshape(-1, 96 * 144)
 
-    X_test = get_test_data('ssp245', eof_solvers)
+    X_test = get_test_data('ssp245', eof_solvers, datapath)
     Y_test = xr.open_dataset(datapath + 'outputs_ssp245.nc').compute()
-    truth = Y_test["var"].mean('member')
+    truth = Y_test[var].mean('member')
 
     # Drop rows including nans
     nan_train_mask = X_train.isna().any(axis=1).values

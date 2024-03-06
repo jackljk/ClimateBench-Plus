@@ -67,7 +67,7 @@ def create_predictor_data(data_sets, data_path, n_eofs=5):
     return inputs, (so2_solver, bc_solver)
 
 
-def get_test_data(file, eof_solvers, n_eofs=5):
+def get_test_data(file, eof_solvers, data_path, n_eofs=5):
     """
     Args:
         file str: name of datasets
@@ -97,7 +97,7 @@ def get_test_data(file, eof_solvers, n_eofs=5):
     return inputs
 
 
-def create_predictdand_data(data_sets):
+def create_predictdand_data(data_sets, data_path):
     if isinstance(data_sets, str):
         data_sets = [data_sets]
     Y = xr.concat([xr.open_dataset(data_path + f"outputs_{file}.nc") for file in data_sets], dim='time').mean("member")
