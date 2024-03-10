@@ -1,3 +1,6 @@
+# Description: Configuration file for running the model
+```
+# Filepath where the data is stored
 datapath: data/
 
 
