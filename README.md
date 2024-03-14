@@ -35,8 +35,8 @@ pip install -r requirements.txt
 You need the `utils.py` file in `XGBoost` folder to prepare the preprocessed data and save the training and test data by a certain output path.
 
 
-**NOT IMPLEMENTED YET** (Code is currently only in the notebooks as model is still incomplete)
-Then, run the following command to run the code:
+**Running XGBoost** 
+Replace the parameters, run the following command to run the code:
 ```bash
 python xgboost_main.py
 ```
