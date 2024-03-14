@@ -26,7 +26,7 @@ If set to `search` the model will setup a hyperparameter search using the `raytu
 - The `notebooks` directory contains the notebooks for each of the Final individual models which I trained and performed my hyperparameter search on.
 - The `tests` directory contains my other attempts to implement the Deep Kernel Learning model and which did not work out as expected.
 
-## XGBoost Regression
+### XGBoost Regression
 To run the code, after creating a basic conda environment, go to the `requirement.txt` file in `XGBoost` folder and 
 run the following command:
 ```bash
@@ -35,8 +35,8 @@ pip install -r requirements.txt
 You need the `utils.py` file in `XGBoost` folder to prepare the preprocessed data and save the training and test data by a certain output path.
 
 
-**Running XGBoost** 
-Replace the parameters, run the following command to run the code:
+### Running XGBoost
+Replace the parameters, and run the following command to run the model:
 ```bash
 python xgboost_main.py
 ```
