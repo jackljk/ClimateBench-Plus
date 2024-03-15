@@ -50,5 +50,5 @@ run the following command:
 pip install -r requirements.txt
 ```
 
-**Running PINN** 
-Then, run the `pinn.ipynb' in 'PINN' folder
+## Running PINN** 
+Then, run the `PINN.ipynb' in 'PINN' folder
