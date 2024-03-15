@@ -54,5 +54,5 @@ conda activate ClimateBenchPlus
 ```
 After activating the environment, you can change the config file `config.yaml` to change what variable you want to predict for. Then to run the model, run the following command:
 ```bash
-python main.py --config configs/config.yaml 
+python main.py --config config.yaml 
 ```
