@@ -1,0 +1,9 @@
+# Description: Configuration file for running the model
+# Filepath where the data is stored
+datapath: data/
+
+# Variables to run options: tas, pr, dtr, pr90
+variable: tas
+
+
+

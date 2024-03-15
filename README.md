@@ -42,14 +42,15 @@ python xgboost_main.py
 ```
 
 ## CNN LSTM with Physics-Informed Loss
-To run the code, after creating a basic conda environment, go to the `requirement.txt` file in `DKL Gaussian Process` folder and 
-run the following command:
+To run the code, first you need to have anaconda install on your machine. then navigate to the `PINN` folder and run the following command:
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
-
-**NOT IMPLEMENTED YET** (Code is currently only in the notebooks as model is still incomplete)
-Then, run the following command to run the code:
+This will create a conda environment in the name `ClimateBenchPlus` with all the required packages. Then, activate the environment by running the following command:
 ```bash
-python main.py
+conda activate ClimateBenchPlus
+```
+After activating the environment, you can change the config file `config.yaml` to change what variable you want to predict for. Then to run the model, run the following command:
+```bash
+python main.py --config configs/config.yaml 
 ```
