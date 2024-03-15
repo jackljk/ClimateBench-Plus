@@ -51,7 +51,4 @@ pip install -r requirements.txt
 ```
 
 **Running PINN** 
-Then, run the following command to run the code:
-```bash
-python main.py
-```
+Then, run the `pinn.ipynb' in 'PINN' folder
