@@ -50,7 +50,7 @@ run the following command:
 pip install -r requirements.txt
 ```
 
-**NOT IMPLEMENTED YET** (Code is currently only in the notebooks as model is still incomplete)
+**Running PINN** 
 Then, run the following command to run the code:
 ```bash
 python main.py
