@@ -51,4 +51,4 @@ pip install -r requirements.txt
 ```
 
 ## Running PINN** 
-Then, run the `PINN.ipynb' in 'PINN' folder
+Then, run the `PINN.ipynb` in `PINN` folder
